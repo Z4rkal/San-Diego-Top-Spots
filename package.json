@@ -1,7 +1,11 @@
 {
     "name": "san-diego-top-spots",
     "version": "0.1.0",
+    "description": "WEB101 Change Calculator",
+    "private": true,
+    "repository": {},
     "scripts": {
+        "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
         "test": "mocha --exit"
     },
     "dependencies": {
@@ -11,6 +15,7 @@
         "lodash": "^4.17.4",
         "mocha": "^5.2.0",
         "morgan": "^1.8.2",
-        "nightmare": "^2.10.0"
+        "nightmare": "^2.10.0",
+        "node-static": "^0.7.9"
     }
 }
