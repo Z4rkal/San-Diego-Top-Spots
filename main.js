@@ -1,8 +1,6 @@
 $(document).ready(function() {
-// write your code here
 $.getJSON('data.json', function(data){
     console.log(data[1]);
-    //console.log('Name: ' + data[1].name);
     data.forEach(function(element){
         console.log('test');
         var row = $('#table-body');
@@ -11,6 +9,4 @@ $.getJSON('data.json', function(data){
         '<td class="loc-link"><a class="link-text" href="https://www.google.com/maps?q=' + element.location[0] + ',' + element.location[1] + '"> Open in Google Maps</a></td></tr>');
     });
 });
-//console.log('test');
 });
-//console.log('test 2');
